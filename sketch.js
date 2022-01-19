@@ -6,7 +6,7 @@ function preload() {
   
   bg= loadImage("aladdin_cave.jpg")
   //load image for the treasure background
-  
+  bg2= loadImage("treasure.jpg")
 }
 
 function setup() {
@@ -26,14 +26,12 @@ function draw() {
   fill("white");
   text("Score: " + score, 450, 50);
 // add code for changing the background to the treasure background
-  
-
   if(score === 3) {
     clear()
     background(bg2)
     fill("black")
     textSize(40);
-    text("TREASURE UNLOCKED",250, 200);
+    text("Tesoro Encontrado",250, 200);
   }
 
   drawSprites()
